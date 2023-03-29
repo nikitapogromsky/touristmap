@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(245, 243, 170);
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.navbar {
+    background: rgb(200, 198, 78);
+    padding: 6px 2%;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0 2%;
+    align-items: center;
+    height: 70px
+}
+
+.navbar ul li {
+    margin-right: 5%;
+}
+.navbar ul li:hover {
+    background: rgb(165, 162, 78);
+}
+
+.navbar ul li:first-child:hover {
+    background: rgb(200, 198, 78);
+}
+
+.navbar ul li:first-child {
+    margin-right: 10%;
+    margin-top: 0;
+}
+
+.hint {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#first {
+    background-image: url('1.jpg');
+}
+
+#first.active {
+    background-image: url('1razm2.jpg');
+}
+
+#second {
+    background-image: url('2.jpg');
+}
+
+#second.active{
+    background-image: url('2razm.jpg');
+}
+
+#third {
+    background-image: url('3.jpg');
+}
+
+#third.active{
+    background-image: url('3razm.jpg');
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  font-family: 'roboto mono';
+  overflow: hidden;
+  margin: 0;
+  background: rgb(245, 243, 170);
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  height: 105vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: black;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3{
+  position: absolute;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  top: 15px;
+  left: 15px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide h5 {
+  position: absolute;
+  font-weight: 500;
+  font-size: 17px;
+  top: 42px;
+  left: 12px;
+  right: 12px;
+  margin: 0;
+  opacity: 0;    
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.slide.active h5 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
