@@ -149,3 +149,8 @@ a {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
   }
+
+  .slide ul {
+    list-style: circle;
+    margin-left: 20px;
+  }

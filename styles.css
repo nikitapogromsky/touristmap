@@ -81,3 +81,16 @@ a {
 .contactstext, .contacts {
     font-size: 25px;
 }
+
+.pagelist ul{
+    list-style:disc;
+}
+.pagelist {
+    margin-left: 20px;
+    font-size: 25px;
+
+}
+.pagelist a {
+    text-decoration: underline;
+}
+
