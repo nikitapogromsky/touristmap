@@ -94,4 +94,15 @@ a {
     text-decoration: underline;
 }
 
+.pagelist ul{
+    list-style:disc;
+}
+.pagelist {
+    margin-left: 20px;
+    font-size: 25px;
+
+}
+.pagelist a {
+    text-decoration: underline;
+}
 
